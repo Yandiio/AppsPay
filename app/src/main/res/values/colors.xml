@@ -3,6 +3,11 @@
     <color name="colorPrimary">#ffff</color>
     <color name="colorPrimaryDark">#ffff</color>
     <color name="colorAccent">#D81B60</color>
-
     <color name="colorOrange">@android:color/holo_orange_light</color>
+    <color name="colorStartPink">#FF1493</color>
+    <color name="colorEndPink">#F778A1	</color>
+    <color name="colorStartOrange">#FF4500</color>
+    <color name="colorEndOrange">#FBB117</color>
+    <color name="colorLavender">#E3E4FA</color>
+    <color name="colorThistle">#FCDFFF</color>
 </resources>
