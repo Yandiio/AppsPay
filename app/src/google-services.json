@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "666909270966",
+    "firebase_url": "https://paycash-9f104.firebaseio.com",
+    "project_id": "paycash-9f104",
+    "storage_bucket": "paycash-9f104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666909270966:android:8dc7775bce151d1b",
+        "android_client_info": {
+          "package_name": "com.example.paycash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666909270966-uggijpubqs09740ium43if5l9p09i06v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paycash",
+            "certificate_hash": "303ad3e867baf82868cf2ee8d94bcddba2656d2f"
+          }
+        },
+        {
+          "client_id": "666909270966-ps2c13or1dc6ro6r39mvedmks1140ath.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMACAINprfPDYbD1HXuaTABz5Wn9C1h1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666909270966-ps2c13or1dc6ro6r39mvedmks1140ath.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
