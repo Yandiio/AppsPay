@@ -4,4 +4,14 @@
     <string name="getStarted">Get Started</string>
     <string name="tvSkip">Skip</string>
     <string name="textview">TextView</string>
+    <string name="title_activity_main_fragment">MainFragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="sign_up">Already Have Account ? Sign In Now!</string>
+    <string name="btn_register">Register</string>
+    <string name="tvPass">Password</string>
+    <string name="tvEmail">Email</string>
+    <string name="tvUname">Username</string>
+    <string name="Account">Account</string>
 </resources>
