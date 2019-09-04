@@ -40,8 +40,8 @@ public class IntroActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         if (restorePrefData()) {
-            Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(mainActivity);
+//            Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+//            startActivity(mainActivity);
             finish();
         }
 
@@ -86,8 +86,8 @@ public class IntroActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent start = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(start);
+//                Intent start = new Intent(getApplicationContext(),MainActivity.class);
+//                startActivity(start);
                 savePrefData();
                 finish();
             }
