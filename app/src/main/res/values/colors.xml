@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ec9b3b</color>
-    <color name="colorPrimaryDark">#f77754</color>
+    <color name="colorPrimary">#fbb117</color>
+    <color name="colorPrimaryDark">#ff4500</color>
     <color name="colorAccent">#D81B60</color>
-
     <color name="colorOrange">@android:color/holo_orange_light</color>
+    <color name="colorStartPink">#FF1493</color>
+    <color name="colorEndPink">#F778A1	</color>
+    <color name="colorStartOrange">#FF4500</color>
+    <color name="colorEndOrange">#FBB117</color>
+    <color name="colorLavender">#E3E4FA</color>
+    <color name="colorThistle">#FCDFFF</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
 </resources>
