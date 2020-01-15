@@ -10,4 +10,8 @@
     <color name="colorEndOrange">#FBB117</color>
     <color name="colorLavender">#E3E4FA</color>
     <color name="colorThistle">#FCDFFF</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
 </resources>

@@ -14,4 +14,7 @@
     <string name="tvEmail">Email</string>
     <string name="tvUname">Username</string>
     <string name="Account">Account</string>
+    <string name="Pembayaran">Pilih Methode Pembayaran</string>
+    <string name="transfer">Transfer Bank</string>
+    <string name="Chat">Chat</string>
 </resources>
