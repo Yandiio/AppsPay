@@ -1,4 +1,4 @@
-package com.example.paycash.User;
+package com.example.paycash.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.paycash.PhoneNumberActivity;
 import com.example.paycash.R;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,7 +25,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
-        Intent j = new Intent(this,LoginActivity.class);
+        Intent j = new Intent(this, PhoneNumberActivity.class);
         startActivity(j);
     }
 }

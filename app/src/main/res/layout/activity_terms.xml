@@ -77,22 +77,27 @@ eleifend leo. Quisque sit est et sapien ullamcorper."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/btnAgree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/agree"
+        android:background="@android:color/transparent"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/btnDecline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/declline"
+        android:clickable="true"
+        android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/btnAgree"
         android:layout_marginTop="70dp"/>
 
 

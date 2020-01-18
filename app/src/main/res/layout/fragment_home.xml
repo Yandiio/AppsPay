@@ -17,7 +17,7 @@
             android:background="@color/colorWhite">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@color/colorWhite">
@@ -26,20 +26,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PayCash"
-                    android:layout_marginLeft="25dp"
                     android:fontFamily="@font/montserrateb"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:textColor="@color/Orange"/>
 
                 <ImageView
+                    android:id="@+id/notif_navbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_path_2"
-                    android:layout_marginLeft="155dp"
+                    android:layout_marginLeft="175dp"
                     android:layout_marginTop="3dp"/>
 
                 <ImageView
+                    android:id="@+id/history_navbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_path_417"
@@ -47,6 +48,7 @@
                     android:layout_marginTop="3dp"/>
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_navbar"
                     android:layout_height="28dp"
                     android:layout_width="28dp"
                     android:src="@drawable/user"
@@ -92,11 +94,13 @@
                     android:rowCount="2">
 
                     <ImageView
+                        android:id="@+id/send_money_btn_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/money_transfer" />
 
                     <ImageView
+                        android:id="@+id/topup_btn_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="32dp"
@@ -104,6 +108,7 @@
                         android:src="@drawable/topup" />
 
                     <ImageView
+                        android:id="@+id/request_btn_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -111,6 +116,7 @@
                         android:src="@drawable/send" />
 
                     <ImageView
+                        android:id="@+id/more_btn_pay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="35dp"
@@ -219,6 +225,7 @@
                     android:layout_marginTop="20dp">
 
                     <ImageView
+                        android:id="@+id/send_money_btn_img"
                         android:layout_width="47dp"
                         android:layout_height="47dp"
                         android:src="@drawable/passbook"/>
