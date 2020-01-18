@@ -4,6 +4,7 @@
     package="com.example.paycash">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,11 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-
-        <activity android:name=".Payment.PaymentActivity"></activity>
+        <activity android:name=".ui.payment.PaymentMethod"></activity>
+        <activity android:name=".ui.payment.MyOrder" />
+        <activity android:name=".Payment.PaymentActivity" />
         <activity android:name=".ui.Profile.ProfileFragment" />
         <activity android:name=".HistoryActivity" />
-        <activity android:name=".MainFragment"></activity>
+        <activity android:name=".MainFragment" />
         <activity android:name=".User.RegisterActivity" />
         <activity android:name=".User.LoginActivity" />
         <activity android:name=".Onboarding.IntroActivity">
