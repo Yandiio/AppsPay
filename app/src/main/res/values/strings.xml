@@ -24,4 +24,6 @@
     <string name="gello">gello</string>
     <string name="title_news">News</string>
     <string name="title_report">Report</string>
+    <string name="popular">Popular</string>
+    <string name="finance">Finance</string>
 </resources>

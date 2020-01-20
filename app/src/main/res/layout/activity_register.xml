@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background">
 
-
-
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -100,7 +97,7 @@
             android:layout_height="46dp"
             android:layout_marginTop="2dp"
             android:clickable="true"
-            android:layout_marginBottom="55dp"
+            android:layout_marginBottom="25dp"
             android:background="#ffffff"
             android:layout_gravity="center_horizontal"
             android:shadowRadius="@android:integer/status_bar_notification_info_maxnum"

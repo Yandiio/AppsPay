@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.paycash.auth.RegisterActivity;
-
 public class TermsActivity extends AppCompatActivity implements View.OnClickListener {
 
     public ImageButton btnAccept,btnDecline;
