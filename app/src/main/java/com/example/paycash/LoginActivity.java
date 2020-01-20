@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if(a != null){
             updateUI();
-            
+
         }
     }
 
