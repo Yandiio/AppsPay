@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.payment.PaymentMethod">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Payment Method"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Select one of the payment methods"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <ImageView
+        android:id="@+id/GoPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/GoPay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail" />
+
+    <TextView
+        android:id="@+id/titleGopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Go Pay"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/GoPay"
+        app:layout_constraintTop_toBottomOf="@id/detail" />
+
+    <TextView
+        android:id="@+id/detailGopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Use your Gopay balance account and Scan QR Code"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/GoPay"
+        app:layout_constraintTop_toBottomOf="@id/titleGopay" />
+
+    <ImageView
+        android:id="@+id/selectGopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail" />
+
+    <ImageView
+        android:id="@+id/CreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/CreditCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GoPay" />
+
+    <TextView
+        android:id="@+id/titleCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Credit Card"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/CreditCard"
+        app:layout_constraintTop_toBottomOf="@id/detailGopay" />
+
+    <TextView
+        android:id="@+id/detailCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Pay with MasterCard or Visa"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/CreditCard"
+        app:layout_constraintTop_toBottomOf="@id/titleCreditCard" />
+
+    <ImageView
+        android:id="@+id/selectCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectGopay" />
+
+    <ImageView
+        android:id="@+id/MobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/MobileBanking"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CreditCard" />
+
+    <TextView
+        android:id="@+id/titleMobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Mobile Banking"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/MobileBanking"
+        app:layout_constraintTop_toBottomOf="@id/detailCreditCard" />
+
+    <TextView
+        android:id="@+id/detailMobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Pay Directly with your Bank Account"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/MobileBanking"
+        app:layout_constraintTop_toBottomOf="@id/titleMobileBanking" />
+
+    <ImageView
+        android:id="@+id/selectMobileBanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectCreditCard" />
+
+    <ImageView
+        android:id="@+id/Paypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/Paypal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MobileBanking" />
+
+    <TextView
+        android:id="@+id/titlePaypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Paypal"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/Paypal"
+        app:layout_constraintTop_toBottomOf="@+id/detailMobileBanking" />
+
+    <TextView
+        android:id="@+id/detailPaypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faster * Safety way to send money"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/Paypal"
+        app:layout_constraintTop_toBottomOf="@id/titlePaypal"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/selectPaypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailMobileBanking" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
