@@ -4,20 +4,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 //import com.example.paycash.Fragment.R;
-import com.example.paycash.R;
 import com.example.paycash.ui.Profile.ProfileFragment;
-import com.example.paycash.ui.dashboard.DashboardFragment;
+import com.example.paycash.ui.chat.ChatFragment;
 import com.example.paycash.ui.home.HomeFragment;
-import com.example.paycash.ui.notifications.NotificationsFragment;
+import com.example.paycash.ui.news.NewsFragment;
+import com.example.paycash.ui.report.ReportFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainFragment extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -37,13 +33,16 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
             case R.id.navigation_home:
                 fragment = new HomeFragment();
                 break;
-            case R.id.navigation_notifications:
-                fragment = new NotificationsFragment();
+            case R.id.navigation_chat:
+                fragment = new ChatFragment();
                 break;
-            case R.id.navigation_dashboard:
-                fragment = new DashboardFragment();
+            case R.id.navigation_news:
+                fragment = new NewsFragment();
                 break;
-            case R.id.navigation_settings:
+            case R.id.navigation_report:
+                fragment = new ReportFragment();
+                break;
+            case R.id.navigation_profile:
                 fragment = new ProfileFragment();
                 break;
 
