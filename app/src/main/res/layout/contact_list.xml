@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:id="@+id/linearContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:background="?android:selectableItemBackground">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img_add"
+            android:id="@+id/imgContact"
             android:layout_width="47dp"
             android:layout_height="47dp"
-            android:src="@drawable/passbook"/>
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
 
         <TextView
-            android:id="@+id/tx_add"
-            android:layout_width="wrap_content"
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add"
-            android:layout_below="@+id/img_add"
-            android:layout_marginLeft="10dp"/>
+            android:text="Ariel"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserratr"
+            android:textSize="10dp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
 
 
 </RelativeLayout>
