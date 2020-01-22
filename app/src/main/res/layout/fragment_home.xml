@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/relativeHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -17,12 +19,14 @@
             android:background="@color/colorWhite">
 
             <LinearLayout
+                android:id="@+id/linearToolbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@color/colorWhite">
 
                 <TextView
+                    android:id="@+id/tvTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PayCash"
@@ -33,6 +37,7 @@
                     android:textColor="@color/Orange"/>
 
                 <ImageView
+                    android:id="@+id/imgNotif"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_path_2"
@@ -40,6 +45,7 @@
                     android:layout_marginTop="3dp"/>
 
                 <ImageView
+                    android:id="@+id/imgHistory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_path_417"
@@ -47,6 +53,7 @@
                     android:layout_marginTop="3dp"/>
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
                     android:layout_height="28dp"
                     android:layout_width="28dp"
                     android:src="@drawable/user"
@@ -55,7 +62,7 @@
         </Toolbar>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_pay"
+            android:id="@+id/cardPay"
             android:layout_width="450dp"
             android:layout_height="155dp"
             android:layout_below="@id/toolbar"
@@ -68,11 +75,12 @@
             app:cardCornerRadius="12dp">
 
             <RelativeLayout
+                android:id="@+id/relativeCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/titleCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -83,20 +91,23 @@
                     android:textSize="20dp" />
 
                 <GridLayout
+                    android:id="@+id/gridMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/title"
+                    android:layout_below="@id/titleCard"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="15dp"
                     android:columnCount="4"
                     android:rowCount="2">
 
                     <ImageView
+                        android:id="@+id/imgPay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/money_transfer" />
 
                     <ImageView
+                        android:id="@+id/imgTopup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="32dp"
@@ -104,6 +115,7 @@
                         android:src="@drawable/topup" />
 
                     <ImageView
+                        android:id="@+id/imgReq"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -111,6 +123,7 @@
                         android:src="@drawable/send" />
 
                     <ImageView
+                        android:id="@+id/imgMore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="35dp"
@@ -118,6 +131,7 @@
                         android:src="@drawable/send" />
 
                     <TextView
+                        android:id="@+id/tvPay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -128,6 +142,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvTopup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="22dp"
@@ -139,6 +154,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvReq"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -150,6 +166,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tvMore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="42dp"
@@ -164,8 +181,8 @@
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout
-            android:id="@+id/tx_send"
-            android:layout_below="@id/card_pay"
+            android:id="@+id/txSend"
+            android:layout_below="@id/cardPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -173,6 +190,7 @@
             android:layout_marginRight="25dp">
 
             <TextView
+                android:id="@+id/titleSend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Send Money To"
@@ -182,6 +200,7 @@
                 android:textColor="@color/Black"/>
 
             <TextView
+                android:id="@+id/txViewContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
@@ -193,10 +212,10 @@
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_contact"
+            android:id="@+id/cardContact"
             android:layout_width="335dp"
             android:layout_height="101dp"
-            android:layout_below="@id/tx_send"
+            android:layout_below="@id/txSend"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="25dp"
@@ -206,45 +225,59 @@
             app:cardCornerRadius="12dp">
 
             <RelativeLayout
+                android:id="@+id/relativeContact"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
                 <LinearLayout
-                    android:id="@+id/add"
+                    android:id="@+id/linearAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="20dp">
 
                     <ImageView
+                        android:id="@+id/imgAdd"
                         android:layout_width="47dp"
                         android:layout_height="47dp"
                         android:src="@drawable/passbook"/>
 
                     <TextView
+                        android:id="@+id/tvAdd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Add"
+                        android:layout_marginTop="2dp"
                         android:fontFamily="@font/montserratr"
                         android:textSize="10dp"
                         android:gravity="center_horizontal"/>
 
                 </LinearLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
+                <LinearLayout
+                    android:id="@+id/linearRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/add"
-                    android:layout_marginLeft="15dp"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@id/linearAdd">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout
-            android:id="@+id/tx_explore"
-            android:layout_below="@id/card_contact"
+            android:id="@+id/relativeExplore"
+            android:layout_below="@id/cardContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -252,6 +285,7 @@
             android:layout_marginRight="25dp">
 
             <TextView
+                android:id="@+id/titleExplore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Explore"
@@ -261,6 +295,7 @@
                 android:textColor="@color/Black"/>
 
             <TextView
+                android:id="@+id/tvViewExp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
@@ -271,21 +306,20 @@
                 android:textStyle="bold"/>
         </RelativeLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tx_explore">
+            android:orientation="horizontal"
+            android:layout_below="@id/relativeExplore"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerExplore"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"/>
-
-        </RelativeLayout>
-
-
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
 
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>

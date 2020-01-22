@@ -18,6 +18,7 @@
 <!--    Text Color-->
     <color name="Orange">#FC750D</color>
     <color name="Black">#000000</color>
+    <color name="Green">#00FF00</color>
 
 <!--    Card Color / Button -->
     <color name="Blue">#40A9D8</color>
