@@ -40,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     TextView tvLogin;
     ImageView Image;
     static int precCode = 1;
+    static int REQUESCODE =1;
     Uri pickImgUri;
     private FirebaseAuth mAuth;
 
@@ -84,7 +85,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             public void onClick(View v) {
                 if(Build.VERSION.SDK_INT >= 22){
 
-
                     checkAndRequestPermission();
                 }else{
 
@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 if(task.isSuccessful()){
 
                     showMessage("Amount Created");
-                    updateUserInfo(name,pickImgUri,mAuth.getCurrentUser());
+                      updateUserInfo(name,pickImgUri,mAuth.getCurrentUser());
 
                 }else{
 
@@ -167,8 +167,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     public void openGallery() {
         Intent tent = new Intent(Intent.ACTION_GET_CONTENT);
-        tent.setType("iamge/*");
-        startActivityForResult(tent,REQUESTCODE);
+        tent.setType("image/*");
+
+        startActivityForResult(tent,REQUESCODE);
     }
 
     private void checkAndRequestPermission(){

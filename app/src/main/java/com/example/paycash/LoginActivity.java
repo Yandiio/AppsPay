@@ -42,60 +42,72 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onClick(View v) {
 
-                final String email = editMail.getText().toString();
-                final String password = editPassw.getText().toString();
-
-                if(email.isEmpty() || password.isEmpty()){
-                    showMessage("Please Verify All Password");
-                }
-                else{
-                    signIn(email,password);
-                }
+                  Intent in = new Intent(getApplicationContext(),MainFragment.class);
+                  startActivity(in);
+//                final String email = editMail.getText().toString();
+//                final String password = editPassw.getText().toString();
+//
+//                if(email.isEmpty() || password.isEmpty()){
+//                    showMessage("Please Verify All Password");
+//                }
+//                else{
+//                    signIn(email,password);
+//                }
             }
         });
-    }
 
-    private void signIn(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    updateUI();
-                }else{
-                    showMessage(task.getException().getMessage());
-                }
-            }
-        });
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser a = mAuth.getCurrentUser();
-
-        if(a != null){
-            updateUI();
-
+//
+//    private void signIn(String email, String password) {
+//        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//            @Override
+//            public void onComplete(@NonNull Task<AuthResult> task) {
+//                if(task.isSuccessful()){
+//                    updateUI();
+//                }else{
+//                    showMessage(task.getException().getMessage());
+//                }
+//            }
+//        });
+//    }
+//
+////    @Override
+////    protected void onStart() {
+////        super.onStart();
+////        FirebaseUser a = mAuth.getCurrentUser();
+////
+////        if(a != null){
+////            updateUI();
+////        }
+////    }
+//
+//    private void updateUI() {
+//        Intent in = new Intent(getApplicationContext(),MainFragment.class);
+//        startActivity(in);
+//        finish();
+//    }
+//
+//    private void showMessage(String text) {
+//        Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
+//    }
+//
+//    @Override
+//    public void onClick(View view) {
+//        switch (view.getId()){
+//            case R.id.register :
+//                Intent i = new Intent(this,RegisterActivity.class);
+//                startActivity(i);
+//                break;
         }
-    }
-
-    private void updateUI() {
-        Intent in = new Intent(getApplicationContext(),MainFragment.class);
-        startActivity(in);
-        finish();
-    }
-
-    private void showMessage(String text) {
-        Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
-    }
 
     @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.register :
-                Intent i = new Intent(this,RegisterActivity.class);
-                startActivity(i);
-                break;
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.register:
+                Intent g = new Intent(this,RegisterActivity.class);
+                startActivity(g);
+                finish();
         }
     }
 }
+
+
