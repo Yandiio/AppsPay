@@ -33,9 +33,6 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
             case R.id.navigation_home:
                 fragment = new HomeFragment();
                 break;
-            case R.id.navigation_chat:
-                fragment = new ChatFragment();
-                break;
             case R.id.navigation_news:
                 fragment = new NewsFragment();
                 break;

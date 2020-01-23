@@ -37,81 +37,80 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin">
         </de.hdodenhof.circleimageview.CircleImageView>
 
-        <TextView
-            android:id="@+id/username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:text="@string/tvUname"
-            android:textColor="@android:color/white" />
-
         <EditText
             android:id="@+id/editUser"
             android:layout_width="match_parent"
+            android:hint="@string/tvUname"
+            android:textColorHint="@color/whiteTextColor"
             android:layout_height="wrap_content"
             android:layout_below="@+id/username"
             android:layout_marginLeft="20dp"
+            android:textColor="@color/whiteTextColor"
             android:backgroundTint="@android:color/white"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp" />
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:text="@string/tvEmail"
-            android:textColor="@android:color/white" />
 
         <EditText
             android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/tvEmail"
+            android:textColorHint="@color/whiteTextColor"
+            android:textColor="@color/whiteTextColor"
             android:layout_below="@+id/email"
             android:layout_marginLeft="20dp"
             android:backgroundTint="@android:color/white"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp" />
 
-        <TextView
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:text="@string/tvPass"
-            android:textColor="@android:color/white" />
-
         <EditText
             android:id="@+id/editPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/whiteTextColor"
             android:layout_below="@+id/password"
+            android:hint="@string/tvPass"
+            android:textColorHint="@color/whiteTextColor"
             android:layout_marginLeft="20dp"
             android:backgroundTint="@android:color/white"
             android:layout_marginBottom="32dp"
             android:layout_marginRight="20dp"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/tombol_register"
-            android:layout_width="347dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="2dp"
-            android:clickable="true"
-            android:layout_marginBottom="25dp"
-            android:background="#ffffff"
+            android:layout_width="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:shadowRadius="@android:integer/status_bar_notification_info_maxnum"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratr"
+            android:textStyle="normal"
             android:text="@string/btn_register"
-            android:shadowColor="@android:color/white"
-            android:textAllCaps="false"
-            android:textColor="#fa7899"
-            android:textSize="20sp"/>
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:clickable="true"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="268dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="18dp"
             android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
             android:textColor="@android:color/white"
             android:text="@string/sign_up"/>
 

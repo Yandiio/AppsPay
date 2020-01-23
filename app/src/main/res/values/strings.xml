@@ -19,4 +19,12 @@
     <string name="Chat">Chat</string>
     <string name="News">News</string>
     <string name="tvButton">Lebih Banyak</string>
+    <string name="popular">Popular</string>
+    <string name="finance">finacne</string>
+    <string name="title_news">News</string>
+    <string name="title_report">Report</string>
+    <string name="login">Login</string>
+    <string name="finances">Finance</string>
+    <string name="date">Date</string>
+    <string name="Sources">Sources</string>
 </resources>

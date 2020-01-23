@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "210848244353-60l8f91i8mkd04t3n1s19hr69uannp3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paycash",
+            "certificate_hash": "8a372c9e04448884cbb89ef373176284dd21e098"
+          }
+        },
+        {
           "client_id": "210848244353-7igi0i0t66906c88c0uv5rhs30o3sdmf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

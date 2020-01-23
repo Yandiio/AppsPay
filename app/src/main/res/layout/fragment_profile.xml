@@ -264,7 +264,7 @@
                         android:layout_height="30dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="7dp"
-                        android:src="@drawable/Help"/>
+                        android:src="@drawable/help"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -300,7 +300,7 @@
                         android:layout_height="30dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="7dp"
-                        android:src="@drawable/Logout"/>
+                        android:src="@drawable/logout"/>
 
                     <TextView
                         android:layout_width="wrap_content"
