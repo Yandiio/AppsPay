@@ -27,7 +27,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvRegist;
     public EditText editMail,editPassw;
-    MaterialButton btnLogin;
+    Button btnLogin;
     FirebaseAuth mAuth;
 
     @Override
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         tvRegist = (TextView) findViewById(R.id.register);
         tvRegist.setOnClickListener(this);
-        btnLogin = (MaterialButton) findViewById(R.id.tombol_login);
+        btnLogin = (Button) findViewById(R.id.tombol_login);
 
         editPassw = (EditText) findViewById(R.id.editPass);
         editMail = (EditText) findViewById(R.id.editUsern);

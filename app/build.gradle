@@ -46,6 +46,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
 
+
     implementation 'com.google.firebase:firebase-storage:19.1.0'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
