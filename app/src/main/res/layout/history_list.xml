@@ -34,11 +34,11 @@
                 android:layout_toRightOf="@id/imgSent"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="15dp"
-                android:text="Sent"
+                android:text="@string/sent"
                 android:fontFamily="@font/montserratl"
                 android:textStyle="bold"
                 android:textColor="@color/Black"
-                android:textSize="15dp"/>
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/txDesc"
@@ -47,9 +47,9 @@
                 android:layout_below="@id/imgSent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="8dp"
-                android:text="School Payment"
+                android:text="@string/school_payment"
                 android:textColor="@color/Black"
-                android:textSize="11dp"
+                android:textSize="11sp"
                 android:fontFamily="@font/montserratr"
                 android:textStyle="bold"/>
 
@@ -60,8 +60,8 @@
                 android:layout_below="@id/txDesc"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="2dp"
-                android:text="In 04.00  AM, 13 July"
-                android:textSize="8dp"
+                android:text="@string/in_04_00_am_13_july"
+                android:textSize="8sp"
                 android:fontFamily="@font/montserratr"
                 android:textStyle="bold"/>
         </RelativeLayout>

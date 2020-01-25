@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,14 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Activities.NewsActivity">
-
-        </activity>
+        <activity android:name=".Activities.PaymentGatewayActivity"></activity>
+        <activity android:name=".Activities.NewsActivity"></activity>
         <activity android:name=".Activities.PasscodeActivity" />
         <activity android:name=".Activities.PhoneNumberActivity" />
         <activity android:name=".ui.Profile.ProfileFragment" />
         <activity android:name=".Activities.TermsActivity" />
-        <activity android:name=".MainFragment"></activity>
+        <activity android:name=".MainFragment" />
         <activity android:name=".Activities.RegisterActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
@@ -34,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.LoginActivity"></activity>
+        <activity android:name=".Activities.LoginActivity" />
     </application>
 
 </manifest>
