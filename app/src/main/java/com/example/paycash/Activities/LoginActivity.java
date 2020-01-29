@@ -34,12 +34,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        tvRegist = (TextView) findViewById(R.id.register);
+        tvRegist = (TextView) findViewById(R.id.tv_signup);
         tvRegist.setOnClickListener(this);
-        btnLogin = (Button) findViewById(R.id.tombol_login);
+        btnLogin = (Button) findViewById(R.id.tombolLogin);
 
         editPassw = (EditText) findViewById(R.id.editPass);
-        editMail = (EditText) findViewById(R.id.editUsern);
+        editMail = (EditText) findViewById(R.id.editEmail);
         SignInButton signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(signInButton.SIZE_STANDARD);
 
@@ -51,70 +51,69 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                   startActivity(in);
 
 
-//                final String email = editMail.getText().toString();
-//                final String password = editPassw.getText().toString();
-//
-//                if(email.isEmpty() || password.isEmpty()){
-//                    showMessage("Please Verify All Password");
-//                }
-//                else{
-//                    signIn(email,password);
-//                }
+                final String email = editMail.getText().toString();
+                final String password = editPassw.getText().toString();
+
+                if(email.isEmpty() || password.isEmpty()){
+                    showMessage("Please Verify All Password");
+                }
+                else{
+                    signIn(email,password);
+                }
             }
         });
+    }
 
-//
-//    private void signIn(String email, String password) {
-//        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//            @Override
-//            public void onComplete(@NonNull Task<AuthResult> task) {
-//                if(task.isSuccessful()){
-//                    updateUI();
-//                }else{
-//                    showMessage(task.getException().getMessage());
-//                }
-//            }
-//        });
-//    }
-//
-////    @Override
-////    protected void onStart() {
-////        super.onStart();
-////        FirebaseUser a = mAuth.getCurrentUser();
-////
-////        if(a != null){
-////            updateUI();
-////        }
-////    }
-//
-//    private void updateUI() {
-//        Intent in = new Intent(getApplicationContext(),MainFragment.class);
-//        startActivity(in);
-//        finish();
-//    }
-//
-//    private void showMessage(String text) {
-//        Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
-//    }
+
+    private void signIn(String email, String password) {
+        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                try{
+                    if(task.isSuccessful()){
+                        updateUI();
+                    }else{
+                        showMessage(task.getException().getMessage());
+                    }
+                }catch (Exception e ){
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
 //
 //    @Override
-//    public void onClick(View view) {
-//        switch (view.getId()){
-//            case R.id.register :
-//                Intent i = new Intent(this,RegisterActivity.class);
-//                startActivity(i);
-//                break;
-        }
+//    protected void onStart(){
+//        super.onStart();
+//        FirebaseUser a = mAuth.getCurrentUser();
+//
+//        if(a != null){
+//            updateUI();
+//        }
+//    }
+
+    private void updateUI() {
+        Intent in = new Intent(getApplicationContext(),MainFragment.class);
+        startActivity(in);
+        finish();
+    }
+
+    private void showMessage(String text) {
+        Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
+    }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.register:
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_signup:
                 Intent g = new Intent(this, RegisterActivity.class);
                 startActivity(g);
                 finish();
+                break;
         }
     }
 }
+
 
 

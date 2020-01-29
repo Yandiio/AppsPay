@@ -8,12 +8,16 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.paycash.R;
+import com.google.firebase.auth.FirebaseUser;
 import com.midtrans.sdk.corekit.callback.TransactionFinishedCallback;
+import com.midtrans.sdk.corekit.core.themes.CustomColorTheme;
 import com.midtrans.sdk.corekit.models.snap.TransactionResult;
+import com.midtrans.sdk.uikit.SdkUIFlowBuilder;
 
 public class PaymentGatewayActivity extends AppCompatActivity implements TransactionFinishedCallback {
 
     public RadioGroup radioGroup;
+    FirebaseUser mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,14 @@ public class PaymentGatewayActivity extends AppCompatActivity implements Transac
         setContentView(R.layout.activity_payment_gateway);
 
         radioGroup = findViewById(R.id.list_product);
+//
+//        SdkUIFlowBuilder.init()
+//                .setClientKey()
+//                .setContext(this)
+//                .setMerchantBaseUrl()
+//                .enableLog(true)
+//                .setColorTheme(new CustomColorTheme("#FFE51255", "#B61548", "#FFE51255"))
+//                .buildSDK();
 
     }
 

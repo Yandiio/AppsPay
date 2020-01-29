@@ -18,26 +18,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".SelectMonthActivity"></activity>
-        <activity android:name=".SelectSchoolActivity" >
+        <activity android:name=".Activities.BarcodeActivity"></activity>
+        <activity android:name=".Activities.CheckoutActivity" />
+        <activity android:name=".Activities.SelectMonthActivity" />
+        <activity android:name=".Activities.PaymentGatewayActivity" />
+        <activity android:name=".Activities.NewsActivity" />
+        <activity android:name=".Activities.PasscodeActivity" />
+        <activity android:name=".Activities.PhoneNumberActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".ui.Profile.ProfileFragment" />
+        <activity android:name=".Activities.TermsActivity" />
+        <activity android:name=".MainFragment" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.PaymentGatewayActivity" />
-        <activity android:name=".Activities.NewsActivity" />
-        <activity android:name=".Activities.PasscodeActivity" />
-        <activity android:name=".Activities.PhoneNumberActivity" />
-        <activity android:name=".ui.Profile.ProfileFragment" />
-        <activity android:name=".Activities.TermsActivity" />
-        <activity android:name=".MainFragment" />
-        <activity android:name=".Activities.RegisterActivity" />
-        <activity android:name=".SplashScreenActivity">
-
-        </activity>
-        <activity android:name=".Activities.LoginActivity" />
     </application>
 
 </manifest>

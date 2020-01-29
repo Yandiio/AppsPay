@@ -31,6 +31,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.3.0'
     implementation 'com.github.florent37:shapeofview:1.4.7'
     implementation 'com.squareup.picasso:picasso:2.71828'
     androidTestImplementation 'androidx.test:runner:1.2.0'
@@ -49,7 +50,9 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-storage:19.1.0'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.TutorialsAndroid:GButton:v1.0.19'
 
 }
 apply plugin: 'com.google.gms.google-services'

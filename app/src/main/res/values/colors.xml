@@ -9,6 +9,10 @@
     <color name="colorStartOrange">#FF4500</color>
     <color name="colorEndOrange">#FBB117</color>
     <color name="colorLavender">#E3E4FA</color>
+    <color name="colorTabindicator">#5b5656</color>
+    <color name="colorBlue">#14153D</color>
+    <color name="colorSoftOrange">#ff6f5e</color>
+    <color name="colorWhiteGrey">#F7F7F7</color>
     <color name="colorThistle">#FCDFFF</color>
     <color name="colorWhite">#FFFFFF</color>
 

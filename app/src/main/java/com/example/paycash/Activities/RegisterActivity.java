@@ -33,11 +33,13 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
-    MaterialButton btnRegist;
+    Button btnRegist;
     TextView tvLogin;
-    ImageView Image;
+    CircleImageView Image;
     static int precCode = 1;
     static int REQUESCODE =1;
     Uri pickImgUri;
@@ -50,14 +52,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        userName = (EditText) findViewById(R.id.editUser);
+        userName = (EditText) findViewById(R.id.editUsername);
         userEmail = (EditText) findViewById(R.id.editEmail);
         userPassword = (EditText) findViewById(R.id.editPass);
 
 
-        tvLogin = (TextView) findViewById(R.id.login);
         tvLogin.setOnClickListener(this);
-        btnRegist = (MaterialButton) findViewById(R.id.tombol_register);
+        btnRegist = (Button) findViewById(R.id.sign_up_button);
 
         mAuth  = FirebaseAuth.getInstance();
 
@@ -78,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
         });
 
-        Image = findViewById(R.id.profile_img);
+        Image = findViewById(R.id.profile_img_up);
         Image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

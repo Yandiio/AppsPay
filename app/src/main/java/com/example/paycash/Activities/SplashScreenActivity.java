@@ -1,4 +1,4 @@
-package com.example.paycash;
+package com.example.paycash.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.paycash.Activities.LoginActivity;
+import com.example.paycash.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 

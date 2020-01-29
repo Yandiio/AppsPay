@@ -6,6 +6,7 @@ import android.view.MenuItem;
 //import com.example.paycash.Fragment.R;
 import com.example.paycash.ui.Profile.ProfileFragment;
 import com.example.paycash.ui.chat.ChatFragment;
+import com.example.paycash.ui.history.HistoryFragment;
 import com.example.paycash.ui.home.HomeFragment;
 import com.example.paycash.ui.news.NewsFragment;
 import com.example.paycash.ui.report.ReportFragment;
@@ -33,8 +34,8 @@ public class MainFragment extends AppCompatActivity implements BottomNavigationV
             case R.id.navigation_home:
                 fragment = new HomeFragment();
                 break;
-            case R.id.navigation_news:
-                fragment = new NewsFragment();
+            case R.id.navigation_history:
+                fragment = new HistoryFragment();
                 break;
             case R.id.navigation_report:
                 fragment = new ReportFragment();

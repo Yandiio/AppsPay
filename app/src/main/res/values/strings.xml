@@ -33,4 +33,28 @@
     <string name="januari">Januari</string>
     <string name="februari">Februari</string>
     <string name="LANJUT">lanjut</string>
+    <string name="Notification">Riwayat</string>
+    <string name="beranda">Beranda</string>
+    <string name="Inbox">Inbox</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maret">Maret</string>
+    <string name="april">April</string>
+    <string name="mei">Mei</string>
+    <string name="Juni">Juni</string>
+    <string name="juli">Juli</string>
+    <string name="agustus">Agustus</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account ? Sign Up !</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="when">When</string>
+    <string name="datetime">23 Jan 2020</string>
+    <string name="school">School</string>
+    <string name="smk_negeri_4">SMK Negeri 4</string>
+    <string name="_12_aug_10_am">12 Aug, 10 AM</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="bayaran">Jenis Pembayaran</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="scan">Scan QR mu ke merchant sekolah</string>
+    <string name="todo">TODO</string>
 </resources>
